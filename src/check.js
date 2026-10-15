@@ -34,7 +34,7 @@ Object.assign(nameToCode, {
 });
 const codeAlias = { GB: "UK", GBR: "UK", USA: "US", DEU: "DE", FRA: "FR", ESP: "ES", ITA: "IT", NLD: "NL", BEL: "BE", IRL: "IE", SWE: "SE",
   DNK: "DK", AUT: "AT", POL: "PL", CHE: "CH", CZE: "CZ", NOR: "NO", FIN: "FI", PRT: "PT", EST: "EE", LVA: "LV", MLT: "MT", LUX: "LU",
-  SVK: "SK", SVN: "SI", HRV: "HR", GRC: "GR", CYP: "CY", BGR: "BG", LIE: "LI", CAN: "CA", AUS: "AU" };
+  SVK: "SK", SVN: "SI", HRV: "HR", GRC: "GR", CYP: "CY", BGR: "BG", LIE: "LI", CAN: "CA", AUS: "AU", SGP: "SG" };
 RULES.forEach((r) => (codeAlias[r.code] = r.code));
 
 const EMAIL = /^[A-Z0-9._%+'-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;

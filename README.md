@@ -2,7 +2,7 @@
 
 Before you send a cold email campaign to another country, check whether the law there lets you. This Actor gives every lead in your list a verdict for the **first unsolicited marketing email** to it, based on the recipient's country and the kind of address.
 
-31 countries, each checked against the law text or the regulator's guidance, with a link to the source.
+32 countries, each checked against the law text or the regulator's guidance, with a link to the source.
 
 ## Why
 
@@ -70,6 +70,7 @@ The email, country and source fields are detected automatically. You can set the
 | [Norway](https://phazww.github.io/can-i-cold-email/c/norway.html) | Consent first | No consent needed | Consent first | 2026-10-10 |
 | [Poland](https://phazww.github.io/can-i-cold-email/c/poland.html) | Consent first | Consent first | Consent first | 2026-10-10 |
 | [Portugal](https://phazww.github.io/can-i-cold-email/c/portugal.html) | Not verified | No consent needed | Consent first | 2026-10-11 |
+| [Singapore](https://phazww.github.io/can-i-cold-email/c/singapore.html) | No consent needed | No consent needed | No consent needed | 2026-10-15 |
 | [Slovakia](https://phazww.github.io/can-i-cold-email/c/slovakia.html) | Specific cases | Specific cases | Specific cases | 2026-10-14 |
 | [Slovenia](https://phazww.github.io/can-i-cold-email/c/slovenia.html) | Specific cases | No consent needed | Consent first | 2026-10-14 |
 | [Spain](https://phazww.github.io/can-i-cold-email/c/spain.html) | Consent first | Consent first | Consent first | 2026-10-10 |
