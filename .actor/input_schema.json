@@ -1,0 +1,69 @@
+{
+  "title": "Cold Email Law Checker input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "leads": {
+      "title": "Leads",
+      "type": "array",
+      "description": "Email addresses, or objects such as {\"email\": \"jane@acme.de\", \"countryCode\": \"DE\", \"source\": \"apollo\"}. Ignored when a dataset ID or CSV URL is given.",
+      "editor": "json",
+      "prefill": [
+        { "email": "info@example.de", "countryCode": "DE" },
+        { "email": "jan.novak@example.sk", "countryCode": "SK", "source": "company website" },
+        { "email": "tom.baker@example.co.uk", "countryCode": "GB" },
+        { "email": "lisa.chen@example.com", "countryCode": "US" }
+      ]
+    },
+    "datasetId": {
+      "title": "Dataset ID",
+      "type": "string",
+      "description": "Check the output of another Actor run, for example a lead scraper. Nested fields such as location.country are found automatically.",
+      "editor": "textfield"
+    },
+    "csvUrl": {
+      "title": "CSV URL",
+      "type": "string",
+      "description": "A public link to a CSV export. The first row must be the header.",
+      "editor": "textfield"
+    },
+    "emailField": {
+      "title": "Email field",
+      "type": "string",
+      "description": "Leave empty to detect it. Example: workEmail.",
+      "editor": "textfield",
+      "sectionCaption": "Field mapping (optional)"
+    },
+    "countryField": {
+      "title": "Country field",
+      "type": "string",
+      "description": "Where the person is, not where the company is headquartered. Leave empty to detect it. Example: location.country.",
+      "editor": "textfield"
+    },
+    "sourceField": {
+      "title": "Address source field",
+      "type": "string",
+      "description": "Optional. Values like published or company website vs. vendor, apollo or hunter. In Canada, Australia, the Netherlands, Slovakia and Slovenia the verdict depends on it.",
+      "editor": "textfield"
+    },
+    "defaultCountry": {
+      "title": "Default country",
+      "type": "string",
+      "description": "Two-letter code used when the country is unknown and the domain does not tell it, for example US.",
+      "editor": "textfield"
+    },
+    "keepOriginalFields": {
+      "title": "Keep the original fields",
+      "type": "boolean",
+      "description": "Output every input field plus the verdict fields (prefixed law_).",
+      "default": true
+    },
+    "maxLeads": {
+      "title": "Max leads",
+      "type": "integer",
+      "description": "0 means no limit.",
+      "default": 0,
+      "minimum": 0
+    }
+  }
+}

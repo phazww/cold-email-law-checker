@@ -1,0 +1,35 @@
+{
+  "actorSpecification": 1,
+  "name": "cold-email-law-checker",
+  "title": "Cold Email Law Checker: B2B consent rules for 31 countries",
+  "description": "Checks every lead in a list against the cold email law of the recipient's country. Tells you where a first marketing email needs consent, with the rule and a link to the law. 31 countries, checked against the law text.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Leads with verdicts",
+      "views": {
+        "overview": {
+          "title": "Verdicts",
+          "transformation": {
+            "fields": ["checkedEmail", "law_country", "law_addressType", "law_verdictLabel", "law_reason", "law_rulesPage"]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "checkedEmail": { "label": "Email" },
+              "law_country": { "label": "Country" },
+              "law_addressType": { "label": "Address type" },
+              "law_verdictLabel": { "label": "Verdict" },
+              "law_reason": { "label": "Why" },
+              "law_rulesPage": { "label": "Rules and sources", "format": "link" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

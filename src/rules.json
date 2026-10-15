@@ -1,0 +1,973 @@
+[
+ {
+  "code": "US",
+  "slug": "united-states",
+  "name": "United States",
+  "tlds": [
+   "us"
+  ],
+  "checked": "2026-10-10",
+  "named": "ok",
+  "generic": "ok",
+  "personal": "ok",
+  "bySource": null,
+  "rule": "No prior consent is needed. CAN-SPAM is an opt-out law and it covers business-to-business email as well.",
+  "must": [
+   "Accurate From, To and Reply-To; a subject line that matches the content",
+   "Say clearly that the message is an ad",
+   "Include a valid physical postal address",
+   "Explain how to opt out and honour opt-outs within 10 business days"
+  ],
+  "notes": [
+   "State laws are not covered here."
+  ],
+  "sources": [
+   {
+    "label": "FTC: CAN-SPAM Act compliance guide for business",
+    "url": "https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "UK",
+  "slug": "united-kingdom",
+  "name": "United Kingdom",
+  "tlds": [
+   "uk"
+  ],
+  "checked": "2026-10-10",
+  "named": "ok",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "The PECR consent rule for email does not apply to corporate subscribers (companies, LLPs, public bodies). Sole traders and some partnerships count as individuals and need consent.",
+  "must": [
+   "Do not disguise or conceal your identity",
+   "Give a valid address to opt out or unsubscribe, and honour opt-outs",
+   "If the address names a person (jane.doe@company.co.uk), UK GDPR still applies: you need a lawful basis and must respect objections"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "ICO: Business-to-business marketing",
+    "url": "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "CA",
+  "slug": "canada",
+  "name": "Canada",
+  "tlds": [
+   "ca"
+  ],
+  "checked": "2026-10-10",
+  "named": "cond",
+  "generic": "cond",
+  "personal": "consent",
+  "bySource": {
+   "vendor": {
+    "named": "consent",
+    "generic": "consent"
+   }
+  },
+  "rule": "CASL requires consent, express or implied, for commercial email, including B2B. Consent is implied when the recipient has conspicuously published the address without a statement that they do not want unsolicited messages, and your message is relevant to their business or role.",
+  "must": [
+   "Check that the address is published openly and carries no \"no solicitation\" statement",
+   "Make sure the message relates to the recipient's business, role or duties",
+   "Identify yourself and include a working unsubscribe mechanism"
+  ],
+  "notes": [
+   "A personal mailbox is treated here as needing consent unless one of the implied-consent cases clearly applies."
+  ],
+  "sources": [
+   {
+    "label": "CASL, section 10(9)(b) and (c) (Justice Laws Website)",
+    "url": "https://laws-lois.justice.gc.ca/eng/acts/E-1.6/page-2.html",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "AU",
+  "slug": "australia",
+  "name": "Australia",
+  "tlds": [
+   "au"
+  ],
+  "checked": "2026-10-10",
+  "named": "cond",
+  "generic": "cond",
+  "personal": "cond",
+  "bySource": {
+   "vendor": {
+    "named": "consent",
+    "generic": "consent",
+    "personal": "consent"
+   }
+  },
+  "rule": "The Spam Act requires consent, express or inferred. A published address alone is not consent. Consent is taken to exist only when a work address is conspicuously published, carries no statement that unsolicited commercial messages are unwanted, and your message is relevant to that person's work, role or function.",
+  "must": [
+   "Check that the address is conspicuously published and has no \"no unsolicited messages\" statement next to it",
+   "Make sure the message is relevant to the work-related business, functions or duties of the person, role or position",
+   "Identify yourself with correct contact details",
+   "Include a clear, free unsubscribe and honour it within 5 working days"
+  ],
+  "notes": [
+   "The same exception covers self-employed individuals whose address is conspicuously published.",
+   "ACMA calls express consent best practice and puts the burden of proving consent on the sender."
+  ],
+  "sources": [
+   {
+    "label": "Spam Act 2003, Schedule 2, clause 4 (Federal Register of Legislation)",
+    "url": "https://www.legislation.gov.au/C2004A01214/latest/text",
+    "type": "law"
+   },
+   {
+    "label": "ACMA: Avoid sending spam",
+    "url": "https://www.acma.gov.au/avoid-sending-spam",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "DE",
+  "slug": "germany",
+  "name": "Germany",
+  "tlds": [
+   "de"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Advertising by email without the addressee's prior express consent is an unacceptable nuisance under UWG section 7(2). For email the law does not distinguish consumers from businesses.",
+  "must": [
+   "Get express consent before the first email",
+   "Existing customers only: you may email about your own similar products if you got the address from a sale, they have not objected, and every message offers an opt-out (section 7(3))"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "UWG (Act against Unfair Competition), section 7, official English translation",
+    "url": "https://www.gesetze-im-internet.de/englisch_uwg/englisch_uwg.html",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "FR",
+  "slug": "france",
+  "name": "France",
+  "tlds": [
+   "fr"
+  ],
+  "checked": "2026-10-10",
+  "named": "ok",
+  "generic": "ok",
+  "personal": "unknown",
+  "bySource": null,
+  "rule": "B2B prospecting by email does not need prior consent if the message relates to the recipient's profession. The person must be informed and able to object. Generic addresses of companies (info@, contact@) are outside these rules.",
+  "must": [
+   "Send only offers related to the recipient's professional role",
+   "Tell the person their address may be used for prospecting and let them object",
+   "Offer a simple way to refuse further messages in every email"
+  ],
+  "notes": [
+   "Consumers need prior consent. Sole traders using a personal mailbox were not checked."
+  ],
+  "sources": [
+   {
+    "label": "CNIL: La prospection commerciale par courrier électronique",
+    "url": "https://www.cnil.fr/fr/la-prospection-commerciale-par-courrier-electronique",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "ES",
+  "slug": "spain",
+  "name": "Spain",
+  "tlds": [
+   "es"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "LSSI article 21 prohibits promotional email that was not previously requested or expressly authorised by the recipient. The article speaks of \"recipients\" and does not exempt companies.",
+  "must": [
+   "Get a request or express authorisation before the first email",
+   "Existing customers only: allowed for your own similar products if contact details were lawfully obtained and each message offers a simple, free way to object (article 21(2))"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "Ley 34/2002 (LSSI), artículo 21 (BOE)",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "IT",
+  "slug": "italy",
+  "name": "Italy",
+  "tlds": [
+   "it"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Promotional email needs prior consent of the \"contracting party or user\", which includes legal persons. An address being public (website, register, PEC index) does not replace consent.",
+  "must": [
+   "Get consent before the first email, also for company addresses",
+   "Existing customers only: \"soft spam\" for similar products using the address given in a sale, if the person was informed and did not refuse"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "Garante Privacy: Linee guida in materia di attività promozionale e contrasto allo spam (2013)",
+    "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/2542348",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "NL",
+  "slug": "netherlands",
+  "name": "Netherlands",
+  "tlds": [
+   "nl"
+  ],
+  "checked": "2026-10-10",
+  "named": "cond",
+  "generic": "cond",
+  "personal": "consent",
+  "bySource": {
+   "vendor": {
+    "named": "consent",
+    "generic": "consent"
+   }
+  },
+  "rule": "Article 11.7 of the Telecommunications Act requires provable prior consent of the subscriber or user. No consent is needed only for contact details the recipient has designated and published for that purpose, used in line with that purpose.",
+  "must": [
+   "Use only an address the business itself published for receiving this kind of message, and stay within that purpose",
+   "State your real identity and a valid address or number to stop the messages in every email",
+   "Existing customers: allowed for your own similar products if they could object when the address was collected"
+  ],
+  "notes": [
+   "An address simply being visible on a website is not the same as being designated for commercial offers."
+  ],
+  "sources": [
+   {
+    "label": "Telecommunicatiewet, artikel 11.7 (text via Maxius)",
+    "url": "https://maxius.nl/telecommunicatiewet/artikel11.7",
+    "type": "law"
+   },
+   {
+    "label": "ACM: spam rules",
+    "url": "https://www.acm.nl/nl/onderwerpen/telecommunicatie/internet/spam",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "BE",
+  "slug": "belgium",
+  "name": "Belgium",
+  "tlds": [
+   "be"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Advertising by email needs prior consent. The Royal Decree of 4 April 2003 lifts that requirement for legal persons when the address used is impersonal, such as info@ or contact@.",
+  "must": [
+   "Without consent, write only to impersonal addresses of companies",
+   "Anyone may tell you, free of charge and without giving reasons, to stop: confirm by email, comply within a reasonable time and keep a list of those who objected",
+   "Existing customers: allowed for your own similar products if they could object when the address was collected"
+  ],
+  "notes": [
+   "A named address such as jane.doe@company.be is not impersonal, so it needs consent."
+  ],
+  "sources": [
+   {
+    "label": "Arrêté royal du 4 avril 2003 réglementant l'envoi de publicités par courrier électronique, art. 1 et 2 (Justel)",
+    "url": "https://www.ejustice.just.fgov.be/eli/arrete/2003/04/04/2003011238/justel",
+    "type": "law"
+   },
+   {
+    "label": "Lexgo: Email marketing, a reminder of what you need to consider",
+    "url": "https://www.lexgo.be/en/news-and-articles/4554-email-marketing-kind-reminder-of-what-you-need-to-consider",
+    "type": "secondary"
+   }
+  ]
+ },
+ {
+  "code": "IE",
+  "slug": "ireland",
+  "name": "Ireland",
+  "tlds": [
+   "ie"
+  ],
+  "checked": "2026-10-10",
+  "named": "cond",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "For business subscribers the rule is opt-out: it is an offence to send unsolicited marketing email to a subscriber, including a business subscriber, that has notified you it does not consent. The DPC warns that emailing an individual at a work address is not automatically B2B.",
+  "must": [
+   "Stop immediately when a business tells you it does not consent",
+   "Treat named individuals with care: the DPC says consent of the individual may still be required",
+   "Include a working opt-out in every message"
+  ],
+  "notes": [
+   "The \"named address\" verdict is cautious because the DPC guidance on individuals at work addresses could not be read in full."
+  ],
+  "sources": [
+   {
+    "label": "DPC case study: prosecution of Viking Direct (Regulation 13(4), S.I. 336 of 2011)",
+    "url": "https://dataprotection.ie/en/dpc-guidance/case-studies/electronic-direct-marketing/prosecution-viking-direct-ireland-limited",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "SE",
+  "slug": "sweden",
+  "name": "Sweden",
+  "tlds": [
+   "se"
+  ],
+  "checked": "2026-10-10",
+  "named": "ok",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Section 19 of the Marketing Act requires prior consent only when marketing by email to a natural person. Marketing to a legal person does not need consent, but section 20 requires a valid address for opting out in every message.",
+  "must": [
+   "Include a valid address where the recipient can ask you to stop, also when emailing a company",
+   "Treat sole traders (enskild firma) as natural persons"
+  ],
+  "notes": [
+   "That a named employee's work address counts as the company's is from Swedish legal commentary, not from the statute itself."
+  ],
+  "sources": [
+   {
+    "label": "Marknadsföringslag (2008:486), 19 and 20 §§ (Riksdagen)",
+    "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/marknadsforingslag-2008486_sfs-2008-486/",
+    "type": "law"
+   },
+   {
+    "label": "Lawline: consent for email marketing to a person at another company",
+    "url": "https://lawline.se/answers/kravs-samtycke-for-att-skicka-e-post-i-marknadsforingssyfte-till-person-pa-annat-foretag",
+    "type": "secondary"
+   }
+  ]
+ },
+ {
+  "code": "DK",
+  "slug": "denmark",
+  "name": "Denmark",
+  "tlds": [
+   "dk"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "The spam ban in section 10 of the Marketing Practices Act applies to all recipients: consumers, companies and public authorities. It makes no difference whether you write to a general mailbox such as info@ or to a named employee.",
+  "must": [
+   "Get consent before the first email",
+   "Existing customers only: narrow exception in section 10(2) for your own similar products"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "Forbrugerombudsmanden: Vejledning om spamforbuddet (2021)",
+    "url": "https://forbrugerombudsmanden.dk/media/bjajzdv1/vejledning-om-spamforbuddet-2021-a.pdf",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "AT",
+  "slug": "austria",
+  "name": "Austria",
+  "tlds": [
+   "at"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Sending email for direct marketing without the recipient's prior consent is not permitted under section 174(3) TKG 2021. The text speaks of \"recipients\" and does not distinguish consumers from businesses.",
+  "must": [
+   "Get consent before the first email",
+   "Existing customers only: exception in section 174(4) for your own similar products or services"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "TKG 2021, § 174 (RIS, federal legal information system)",
+    "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011678&Paragraf=174",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "PL",
+  "slug": "poland",
+  "name": "Poland",
+  "tlds": [
+   "pl"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 398 of the Electronic Communications Law bans sending commercial information, including direct marketing, to a subscriber or end user without prior consent. The law defines an end user as any entity using the service, so companies are covered as well as individuals.",
+  "must": [
+   "Get consent before the first email",
+   "Consent can be given by the recipient providing their address for the purpose of receiving commercial information at that address",
+   "Do not treat an address published for other purposes as consent"
+  ],
+  "notes": [
+   "Breaking the ban is also an act of unfair competition under article 398(4). No UKE or UODO statement specifically on B2B email was found."
+  ],
+  "sources": [
+   {
+    "label": "Prawo komunikacji elektronicznej, art. 398 (text via LexLege)",
+    "url": "https://lexlege.pb.pl/prawo-komunikacji-elektronicznej/art-398/",
+    "type": "law"
+   },
+   {
+    "label": "Prawo komunikacji elektronicznej, art. 2, definitions of abonent and użytkownik końcowy (text via LexLege)",
+    "url": "https://lexlege.pb.pl/prawo-komunikacji-elektronicznej/art-2/",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "CH",
+  "slug": "switzerland",
+  "name": "Switzerland",
+  "tlds": [
+   "ch"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Under article 3(1)(o) of the Unfair Competition Act it is unfair to send mass advertising by telecommunication without the customer's prior consent, without the correct sender, or without a simple and free option of refusal. The text speaks of \"the customer\" and does not exempt business recipients.",
+  "must": [
+   "Get consent before sending mass advertising",
+   "Name the correct sender and offer a simple, free way to refuse in every message",
+   "Existing customers only: allowed for your own similar goods or services if you pointed out the option of refusal when you received their contact details"
+  ],
+  "notes": [
+   "The provision targets mass advertising. How it applies to individually written one-to-one emails was not checked."
+  ],
+  "sources": [
+   {
+    "label": "Unfair Competition Act (UCA, SR 241), art. 3 para. 1 let. o (Fedlex, English translation)",
+    "url": "https://www.fedlex.admin.ch/eli/cc/1988/223_223_223/en",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "CZ",
+  "slug": "czech-republic",
+  "name": "Czech Republic",
+  "tlds": [
+   "cz"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Section 7(2) of Act 480/2004 allows electronic contact details to be used for commercial communications only for users who gave prior consent. The Act defines a user as any natural or legal person, so companies are covered.",
+  "must": [
+   "Get consent before the first email",
+   "Mark every message clearly as a commercial communication, do not hide the sender, and include a valid address for refusing further messages (section 7(4))",
+   "Existing customers only: allowed for your own similar products or services if they can clearly refuse, free of charge, at collection and in every message (section 7(3))"
+  ],
+  "notes": [
+   "No position of the data protection office (ÚOOÚ) specifically on emails to company addresses was found."
+  ],
+  "sources": [
+   {
+    "label": "Zákon č. 480/2004 Sb., § 2 písm. e) a § 7 (text via Zákony pro lidi)",
+    "url": "https://www.zakonyprolidi.cz/cs/2004-480",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "NO",
+  "slug": "norway",
+  "name": "Norway",
+  "tlds": [
+   "no"
+  ],
+  "checked": "2026-10-10",
+  "named": "consent",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Section 15 of the Marketing Control Act bans electronic marketing to natural persons without prior consent. Legal persons are not covered by the ban. The preparatory works say employees should also be protected from individually addressed marketing email at work.",
+  "must": [
+   "Without consent, write only to a company's general address",
+   "Treat a named employee's address as a natural person's and get consent",
+   "Existing customers: allowed for your own goods or services if they can opt out easily and free of charge when the address is collected and in later messages"
+  ],
+  "notes": [
+   "The reading for named work addresses comes from the preparatory works, not from the wording of section 15. The Consumer Authority's guidance could not be opened during this check."
+  ],
+  "sources": [
+   {
+    "label": "Markedsføringsloven § 15 (Lovdata)",
+    "url": "https://lovdata.no/dokument/NL/lov/2009-01-09-2/KAPITTEL_3",
+    "type": "law"
+   },
+   {
+    "label": "Stortinget, Innst. O. nr. 22 (2004-2005), preparatory works",
+    "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Odelstinget/2004-2005/inno-200405-022/1/",
+    "type": "official"
+   }
+  ]
+ },
+ {
+  "code": "FI",
+  "slug": "finland",
+  "name": "Finland",
+  "tlds": [
+   "fi"
+  ],
+  "checked": "2026-10-10",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Email marketing to natural persons needs prior consent (section 200). Direct marketing to legal persons is allowed if the recipient has not specifically prohibited it (section 202).",
+  "must": [
+   "Give every legal person an easy, free way to prohibit further use of its contact details, and say so clearly in each message",
+   "Make the message clearly recognisable as marketing, do not conceal the sender, and include a valid address for ending the messages (section 203)",
+   "Existing customers who are natural persons: allowed for your own similar products, with an opt-out at collection and in every message"
+  ],
+  "notes": [
+   "Whether a named employee's work address counts as a natural person or as the company was not checked, so that verdict is left open."
+  ],
+  "sources": [
+   {
+    "label": "Act on Electronic Communications Services (917/2014), sections 200, 202 and 203 (Finlex, English translation)",
+    "url": "https://www.finlex.fi/en/legislation/translations/2014/eng/917",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "PT",
+  "slug": "portugal",
+  "name": "Portugal",
+  "tlds": [
+   "pt"
+  ],
+  "checked": "2026-10-11",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 13-A of Law 41/2004 requires prior express consent of a subscriber who is a natural person, or of the user. That rule does not apply to subscribers that are legal persons: they may be emailed until they refuse and register on the national opt-out list kept by the consumer authority (DGC).",
+  "must": [
+   "Before emailing companies, check the DGC list of legal persons that object. Senders are obliged to consult it and it is updated monthly",
+   "Do not hide who the message is from, and give a valid contact for asking you to stop (article 13-A(4))",
+   "Existing customers: allowed for your own similar products if they can refuse easily and free of charge at collection and in every message"
+  ],
+  "notes": [
+   "A named employee's address is left open: the consent rule also protects the \"user\", and whether that covers an employee using a company mailbox was not checked.",
+   "Text as added by Law 46/2012. Later amendments were not checked."
+  ],
+  "sources": [
+   {
+    "label": "Lei n.º 46/2012, artigos 13.º-A e 13.º-B aditados à Lei n.º 41/2004 (Diário da República)",
+    "url": "https://files.diariodarepublica.pt/1s/2012/08/16700/0481304826.pdf",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "EE",
+  "slug": "estonia",
+  "name": "Estonia",
+  "tlds": [
+   "ee"
+  ],
+  "checked": "2026-10-14",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Under section 103-1 of the Electronic Communications Act, email marketing to a natural person needs prior consent. Marketing to a legal person is allowed if every message gives a clear, free and easy way to refuse, which can be used over an electronic network.",
+  "must": [
+   "Give a clear, free and easy way to refuse in every message, usable by email or another electronic channel",
+   "Make it possible to identify who the message is sent for",
+   "Stop once the recipient has refused",
+   "Existing customers: allowed for your own similar products if they could refuse at collection and in every message"
+  ],
+  "notes": [
+   "Whether a named employee's work address counts as the company or as a natural person was not checked. The English translation used is the 2019 consolidated version; later amendments were not checked."
+  ],
+  "sources": [
+   {
+    "label": "Electronic Communications Act, section 103-1 (Riigi Teataja, English translation)",
+    "url": "https://www.riigiteataja.ee/en/eli/524012019006/consolide",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "LV",
+  "slug": "latvia",
+  "name": "Latvia",
+  "tlds": [
+   "lv"
+  ],
+  "checked": "2026-10-14",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Section 9 of the Law on Information Society Services bans commercial email without prior free and explicit consent, but paragraph 6 limits that ban to natural persons. For every recipient, the sender must give a valid address for asking to stop and must respect refusals.",
+  "must": [
+   "Include a valid email address or number where the recipient can ask you to stop",
+   "Respect every refusal",
+   "Existing customers: allowed for your own similar products if they did not object and can refuse free of charge in every message"
+  ],
+  "notes": [
+   "Whether a named employee's work address counts as the company or as a natural person was not checked. Section 8 of the same law sets further rules on how a commercial communication must be identified, not covered here."
+  ],
+  "sources": [
+   {
+    "label": "Law on Information Society Services, section 9 (Likumi.lv, official English translation)",
+    "url": "https://likumi.lv/ta/en/en/id/96619",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "MT",
+  "slug": "malta",
+  "name": "Malta",
+  "tlds": [
+   "mt"
+  ],
+  "checked": "2026-10-14",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Regulation 9 of S.L. 586.01 bans unsolicited marketing email to a subscriber or user, whether a natural or a legal person, unless they gave prior consent in writing.",
+  "must": [
+   "Get prior written consent before the first email, also from companies",
+   "Do not disguise or conceal who the email is from, and give a valid address for asking you to stop",
+   "Existing customers: allowed for your own similar products if they could object free of charge at collection and in every message"
+  ],
+  "notes": [],
+  "sources": [
+   {
+    "label": "Processing of Personal Data (Electronic Communications Sector) Regulations, S.L. 586.01, regulation 9 (Legislation Malta)",
+    "url": "https://legislation.mt/eli/sl/586.1/eng",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "LU",
+  "slug": "luxembourg",
+  "name": "Luxembourg",
+  "tlds": [
+   "lu"
+  ],
+  "checked": "2026-10-14",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 11 of the amended law of 30 May 2005 requires prior consent for marketing email, but paragraph 5 limits that requirement to subscribers who are natural persons. Writing to a company does not need consent. Every message must show who it is from and give a valid address for asking you to stop.",
+  "must": [
+   "Do not disguise or conceal who the email is from",
+   "Give a valid address where the recipient can ask you to stop, also when emailing a company",
+   "Existing customers: allowed for your own similar products if they could object free of charge at collection and in every message"
+  ],
+  "notes": [
+   "Paragraph 1 speaks of the subscriber or the user, and the law does not say whether a named employee at a company address counts as the company. I did not find regulator guidance on this, so that case is marked as not verified."
+  ],
+  "sources": [
+   {
+    "label": "Loi modifiée du 30 mai 2005 (vie privée, communications électroniques), article 11 (Legilux, consolidated)",
+    "url": "https://legilux.public.lu/eli/etat/leg/loi/2005/05/30/n4/consolide/20110901",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "SK",
+  "slug": "slovakia",
+  "name": "Slovakia",
+  "tlds": [
+   "sk"
+  ],
+  "checked": "2026-10-14",
+  "named": "cond",
+  "generic": "cond",
+  "personal": "cond",
+  "bySource": {
+   "published": {
+    "named": "ok",
+    "generic": "ok"
+   },
+   "vendor": {
+    "named": "consent",
+    "generic": "consent",
+    "personal": "consent"
+   }
+  },
+  "rule": "Section 116(3) of the Electronic Communications Act requires prior provable consent for marketing email. Section 116(15) lifts that requirement when the email goes to published contact details of a legal person or a sole trader. Every email must let the recipient refuse further messages easily and free of charge, and must show the sender's identity and an address for asking to stop.",
+  "must": [
+   "Write only to contact details the company or sole trader has published, for example on its website",
+   "Offer a simple, free way to refuse further emails in every message",
+   "Show who you are and an address where the recipient can ask you to stop",
+   "Private individuals need prior consent, which you must be able to prove"
+  ],
+  "notes": [
+   "Whether a named employee's address counts as published contact details of the company depends on where it was published. An address you guessed or bought is not published by the recipient."
+  ],
+  "sources": [
+   {
+    "label": "Zákon č. 452/2021 Z. z. o elektronických komunikáciách, § 116 (Slov-Lex, version in force from 18 Aug 2026)",
+    "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy/SK/ZZ/2021/452/",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "SI",
+  "slug": "slovenia",
+  "name": "Slovenia",
+  "tlds": [
+   "si"
+  ],
+  "checked": "2026-10-14",
+  "named": "cond",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": {
+   "published": {
+    "named": "ok"
+   },
+   "vendor": {
+    "named": "consent"
+   }
+  },
+  "rule": "Article 226 of the Electronic Communications Act (ZEKom-2) requires prior consent for marketing email, but paragraph 4 limits that to subscribers who are natural persons. Paragraph 6 allows email to a person's address when the company has published it as its own contact address. Every email must show who it is from and give a valid address for asking you to stop.",
+  "must": [
+   "Write to a named employee only if the company published that address as its contact address",
+   "Do not hide or disguise who the email is from",
+   "Give a valid address where the recipient can ask you to stop",
+   "Existing customers: allowed for your own similar products if they could refuse free of charge at collection and in every message"
+  ],
+  "notes": [
+   "The source is the official but unofficially consolidated text on PISRS, in use from 19 June 2025. The binding text is in the Official Gazette (Uradni list RS 130/22 and later amendments)."
+  ],
+  "sources": [
+   {
+    "label": "Zakon o elektronskih komunikacijah (ZEKom-2), article 226 (PISRS, consolidated text no. 2)",
+    "url": "https://pisrs.si/api/datoteke/integracije/358466648",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "HR",
+  "slug": "croatia",
+  "name": "Croatia",
+  "tlds": [
+   "hr"
+  ],
+  "checked": "2026-10-14",
+  "named": "unknown",
+  "generic": "ok",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 50(1) of the Electronic Communications Act requires the end user's prior consent for marketing email, but paragraph 4 says that rule does not apply to marketing sent to legal persons. Paragraph 3 applies to everyone: the sender's identity must not be hidden, and every email needs a valid address or number where the recipient can ask, free of charge, to stop.",
+  "must": [
+   "Do not hide or misrepresent who the email is from",
+   "Give a valid email address or number where the recipient can ask you to stop, free of charge",
+   "Existing customers: allowed for your own similar products if they could object free of charge at collection and in every message"
+  ],
+  "notes": [
+   "The law does not say whether an email to a named employee at a company address counts as communication to the legal person. I did not find regulator guidance on this, so that case is marked as not verified."
+  ],
+  "sources": [
+   {
+    "label": "Zakon o elektroničkim komunikacijama, NN 76/22, članak 50 (Narodne novine, official gazette)",
+    "url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2022_07_76_1116.html",
+    "type": "law"
+   },
+   {
+    "label": "Consolidated text NN 76/22, 14/24, 45/26 (zakon.hr)",
+    "url": "https://www.zakon.hr/z/182/Zakon-o-elektroni%C4%8Dkim-komunikacijama",
+    "type": "secondary"
+   }
+  ]
+ },
+ {
+  "code": "GR",
+  "slug": "greece",
+  "name": "Greece",
+  "tlds": [
+   "gr"
+  ],
+  "checked": "2026-10-14",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 11(1) of Law 3471/2006 allows unsolicited marketing email only with the subscriber's prior explicit consent, and Article 11(5) says the same rules apply to subscribers who are legal persons. Companies are protected the same way as individuals.",
+  "must": [
+   "Get explicit consent before the first email, also from companies",
+   "Show clearly who the email is from and give a valid address where the recipient can ask you to stop",
+   "Existing customers: allowed for your own similar products if they could object free of charge at collection and in every message"
+  ],
+  "notes": [
+   "Later amendments changed the wording of paragraph 1 and added paragraphs, but the consolidated text still extends the rules to legal persons."
+  ],
+  "sources": [
+   {
+    "label": "Law 3471/2006, article 11, consolidated Greek text (e-nomothesia.gr)",
+    "url": "https://www.e-nomothesia.gr/kat-dedomena-prosopikou-kharaktera/n-3471-2006.html",
+    "type": "law"
+   },
+   {
+    "label": "Law 3471/2006 in English, original 2006 text (ADAE, Hellenic Authority for Communication Security and Privacy)",
+    "url": "https://www.adae.gr/images/pdf/LAW_3471-2006-EN.pdf",
+    "type": "regulator"
+   }
+  ]
+ },
+ {
+  "code": "CY",
+  "slug": "cyprus",
+  "name": "Cyprus",
+  "tlds": [
+   "cy"
+  ],
+  "checked": "2026-10-14",
+  "named": "unknown",
+  "generic": "unknown",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Section 106(1) of Law 112(I)/2004 allows marketing email only to subscribers or users who gave prior consent, and section 106(5) limits that rule to subscribers who are natural persons. For companies, the same paragraph refers to a separate 2005 Order protecting the legitimate interests of legal persons, which I could not read, so emails to companies are marked as not verified. Every email must show who it is from and give a valid address for asking you to stop.",
+  "must": [
+   "Do not hide who the email is from or on whose behalf it is sent",
+   "Give a valid address where the recipient can ask you to stop",
+   "Existing customers: allowed for your own similar products if they could object free of charge at collection and in every message"
+  ],
+  "notes": [
+   "Rules for companies depend on the 2005 Order on legal persons and unsolicited communications, which is not covered here yet."
+  ],
+  "sources": [
+   {
+    "label": "Law 112(I)/2004 on electronic communications and postal services, section 106 (CyLaw, consolidated)",
+    "url": "http://www.cylaw.org/nomoi/enop/non-ind/2004_1_112/full.html",
+    "type": "law"
+   }
+  ]
+ },
+ {
+  "code": "BG",
+  "slug": "bulgaria",
+  "name": "Bulgaria",
+  "tlds": [
+   "bg"
+  ],
+  "checked": "2026-10-14",
+  "named": "cond",
+  "generic": "cond",
+  "personal": "cond",
+  "bySource": null,
+  "rule": "Article 261(1) of the Electronic Communications Act requires prior consent for marketing email, but since 2021 the Act defines the protected \"consumer\" as a natural person acting outside their business. For companies, article 6 of the E-Commerce Act applies: you may email them unless their address is in the opt-out register kept by the Commission for Consumer Protection, and an unsolicited commercial email must be recognisable as unsolicited as soon as it arrives.",
+  "must": [
+   "Check every company address against the Commission for Consumer Protection's opt-out register before sending",
+   "Make the email recognisable as an unsolicited commercial message as soon as it arrives",
+   "Show who you are and give a valid address where the recipient can ask you to stop",
+   "Private individuals acting as consumers need prior consent"
+  ],
+  "notes": [
+   "The E-Commerce Act text was read from a consolidated copy on kik-info.com, because the official portals were behind a bot check."
+  ],
+  "sources": [
+   {
+    "label": "Electronic Communications Act (ЗЕС), art. 261 and § 1 item 49, consolidated text published by the Communications Regulation Commission (CRC)",
+    "url": "https://crc.bg/files/2025%20%D0%9F%D0%A0%D0%90%D0%92%D0%9D%D0%90/%D0%97%D0%95%D0%A1%20-%2025.11.2025%20%D0%B3.%20__%D0%91%D0%93__pdfCielaFile.pdf",
+    "type": "regulator"
+   },
+   {
+    "label": "E-Commerce Act (ЗЕТ), art. 6 (consolidated, kik-info.com)",
+    "url": "https://kik-info.com/normativna-baza/zakoni/0X2135530547/",
+    "type": "secondary"
+   }
+  ]
+ },
+ {
+  "code": "LI",
+  "slug": "liechtenstein",
+  "name": "Liechtenstein",
+  "tlds": [
+   "li"
+  ],
+  "checked": "2026-10-14",
+  "named": "consent",
+  "generic": "consent",
+  "personal": "consent",
+  "bySource": null,
+  "rule": "Article 50(1) of the Communications Act (KomG) bans direct marketing by email unless the recipient gave prior express consent or is an existing customer who did not object. The rule speaks of the recipient and does not exempt companies. Article 50(2) allows one email asking for consent, if it says clearly and prominently that the recipient can refuse further messages and withdraw consent at any time.",
+  "must": [
+   "Get express consent before the first marketing email, also from companies",
+   "You may send one email asking for consent, stating clearly that the recipient can refuse further messages and withdraw consent at any time",
+   "Do not email addresses that were generated at random or whose owner has refused",
+   "A permitted commercial email must be clearly recognisable as such when it arrives (E-Commerce Act, art. 7)"
+  ],
+  "notes": [
+   "The consolidated KomG text read is the version in force from 1 July 2020."
+  ],
+  "sources": [
+   {
+    "label": "Kommunikationsgesetz (KomG), LGBl. 2006 Nr. 91, Art. 50 (gesetze.li, consolidated)",
+    "url": "https://www.gesetze.li/konso/pdf/2006091000",
+    "type": "law"
+   },
+   {
+    "label": "E-Commerce-Gesetz (ECG), LGBl. 2003 Nr. 133, Art. 7 (gesetze.li, consolidated)",
+    "url": "https://www.gesetze.li/konso/pdf/2003133000",
+    "type": "law"
+   }
+  ]
+ }
+]

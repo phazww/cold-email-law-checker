@@ -1,0 +1,17 @@
+{
+  "name": "cold-email-law-checker",
+  "version": "0.1.0",
+  "description": "Checks each lead in a list against the cold email law of the recipient's country: 31 countries, checked against the law text, with sources.",
+  "private": true,
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test test/*.test.js",
+    "rules": "node scripts/build-rules.js",
+    "readme": "node scripts/build-readme.js"
+  },
+  "dependencies": {
+    "apify": "3.7.2"
+  },
+  "license": "MIT"
+}
