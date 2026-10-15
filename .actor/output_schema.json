@@ -1,0 +1,17 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Cold Email Law Checker output",
+  "description": "Every lead with its verdict, and a summary of the run.",
+  "properties": {
+    "results": {
+      "type": "string",
+      "title": "Leads with verdicts",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    },
+    "summary": {
+      "type": "string",
+      "title": "Summary (counts per verdict)",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/records/OUTPUT"
+    }
+  }
+}

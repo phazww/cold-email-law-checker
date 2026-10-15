@@ -15,21 +15,42 @@
         "overview": {
           "title": "Verdicts",
           "transformation": {
-            "fields": ["checkedEmail", "law_country", "law_addressType", "law_verdictLabel", "law_reason", "law_rulesPage"]
+            "fields": [
+              "checkedEmail",
+              "law_country",
+              "law_addressType",
+              "law_verdictLabel",
+              "law_reason",
+              "law_rulesPage"
+            ]
           },
           "display": {
             "component": "table",
             "properties": {
-              "checkedEmail": { "label": "Email" },
-              "law_country": { "label": "Country" },
-              "law_addressType": { "label": "Address type" },
-              "law_verdictLabel": { "label": "Verdict" },
-              "law_reason": { "label": "Why" },
-              "law_rulesPage": { "label": "Rules and sources", "format": "link" }
+              "checkedEmail": {
+                "label": "Email"
+              },
+              "law_country": {
+                "label": "Country"
+              },
+              "law_addressType": {
+                "label": "Address type"
+              },
+              "law_verdictLabel": {
+                "label": "Verdict"
+              },
+              "law_reason": {
+                "label": "Why"
+              },
+              "law_rulesPage": {
+                "label": "Rules and sources",
+                "format": "link"
+              }
             }
           }
         }
       }
     }
-  }
+  },
+  "output": "./output_schema.json"
 }
