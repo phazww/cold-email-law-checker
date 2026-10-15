@@ -42,6 +42,14 @@ The email, country and source fields are detected automatically. You can set the
 
 **Optional source field.** `published` (the company put the address on its own site or in a register) or `vendor` (a tool found or guessed it; values like `apollo` or `hunter` count as vendor). In Canada, Australia, Japan, the Netherlands, Slovakia and Slovenia this changes the verdict.
 
+## Run it automatically after your lead scraper
+
+1. Open the lead scraper you already use (or your saved task for it) and go to the **Integrations** tab.
+2. Choose **Connect Actor or Task**, pick **Cold Email Law Checker**, and trigger it when the run succeeds.
+3. Keep the prefilled input: `{"datasetId": "{{resource.defaultDatasetId}}"}`. Add `countryField` or `sourceField` if your scraper names them differently.
+
+Every new list then gets its verdicts without you touching it. The checker only gets read access to that one dataset.
+
 ## Countries covered
 
 {{TABLE}}

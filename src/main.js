@@ -12,15 +12,18 @@ Actor.main(async () => {
     sourceField,
     defaultCountry,
     keepOriginalFields = true,
-    maxLeads = 0
+    maxLeads = 0,
+    payload
   } = input;
+  // When started by an integration after another Actor's run, the dataset can also arrive in the webhook payload.
+  const datasetToRead = datasetId || payload?.resource?.defaultDatasetId;
 
   // Leads can come from three places, in this order of preference.
   let rows = [];
-  if (datasetId) {
-    const ds = await Actor.openDataset(datasetId, { forceCloud: true });
+  if (datasetToRead) {
+    const ds = await Actor.openDataset(datasetToRead, { forceCloud: true });
     await ds.forEach((item) => { rows.push(item); });
-    log.info(`Read ${rows.length} items from dataset ${datasetId}.`);
+    log.info(`Read ${rows.length} items from dataset ${datasetToRead}.`);
   } else if (csvUrl) {
     const res = await fetch(csvUrl);
     if (!res.ok) throw new Error(`Could not download the CSV (${res.status}).`);
