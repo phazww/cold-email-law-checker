@@ -6,7 +6,7 @@ Before you send a cold email campaign to another country, check whether the law 
 
 ## Why
 
-The rules change at every border. Germany, Spain and Italy want consent before the first email, even to a company address. France allows it if the offer relates to the person's job. The US allows it but wants a postal address and an opt-out in every email. Sweden protects people but not companies. Slovakia and Slovenia care whether the company published the address itself.
+The rules change at every border. Germany, Spain and Italy want consent before the first email, even to a company address. France allows it if the offer relates to the person's job. The US allows it but wants a postal address and an opt-out in every email. Sweden protects people but not companies. Slovakia, Slovenia and Japan care whether the company published the address itself.
 
 Email verifiers tell you whether an address exists. This tells you whether you may write to it.
 
