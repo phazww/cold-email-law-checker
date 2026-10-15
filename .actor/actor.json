@@ -1,8 +1,8 @@
 {
   "actorSpecification": 1,
   "name": "cold-email-law-checker",
-  "title": "Cold Email Law Checker: B2B consent rules for 32 countries",
-  "description": "Checks every lead in a list against the cold email law of the recipient's country. Tells you where a first marketing email needs consent, with the rule and a link to the law. 32 countries, checked against the law text.",
+  "title": "Cold Email Law Checker: B2B consent rules for 33 countries",
+  "description": "Checks every lead in a list against the cold email law of the recipient's country. Tells you where a first marketing email needs consent, with the rule and a link to the law. 33 countries, checked against the law text.",
   "version": "0.1",
   "buildTag": "latest",
   "input": "./input_schema.json",
