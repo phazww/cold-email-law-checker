@@ -60,7 +60,7 @@
     "sourceField": {
       "title": "Address source field",
       "type": "string",
-      "description": "Optional. Values like published or company website vs. vendor, apollo or hunter. In Canada, Australia, the Netherlands, Slovakia and Slovenia the verdict depends on it.",
+      "description": "Optional. Values like published or company website vs. vendor, apollo or hunter. In Canada, Australia, Japan, the Netherlands, Slovakia and Slovenia the verdict depends on it.",
       "editor": "textfield"
     },
     "defaultCountry": {

@@ -40,7 +40,7 @@ The email, country and source fields are detected automatically. You can set the
 
 **Use the person's country, not the company HQ.** The rules follow the recipient: a German employee of a US company is a German recipient. If no country is given, it is guessed from the domain (.de, .fr) and the row says so.
 
-**Optional source field.** `published` (the company put the address on its own site or in a register) or `vendor` (a tool found or guessed it; values like `apollo` or `hunter` count as vendor). In Canada, Australia, the Netherlands, Slovakia and Slovenia this changes the verdict.
+**Optional source field.** `published` (the company put the address on its own site or in a register) or `vendor` (a tool found or guessed it; values like `apollo` or `hunter` count as vendor). In Canada, Australia, Japan, the Netherlands, Slovakia and Slovenia this changes the verdict.
 
 ## Countries covered
 
