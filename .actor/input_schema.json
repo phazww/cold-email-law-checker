@@ -9,17 +9,34 @@
       "description": "Email addresses, or objects such as {\"email\": \"jane@acme.de\", \"countryCode\": \"DE\", \"source\": \"apollo\"}. Ignored when a dataset ID or CSV URL is given.",
       "editor": "json",
       "prefill": [
-        { "email": "info@example.de", "countryCode": "DE" },
-        { "email": "jan.novak@example.sk", "countryCode": "SK", "source": "company website" },
-        { "email": "tom.baker@example.co.uk", "countryCode": "GB" },
-        { "email": "lisa.chen@example.com", "countryCode": "US" }
+        {
+          "email": "info@example.de",
+          "countryCode": "DE"
+        },
+        {
+          "email": "jan.novak@example.sk",
+          "countryCode": "SK",
+          "source": "company website"
+        },
+        {
+          "email": "tom.baker@example.co.uk",
+          "countryCode": "GB"
+        },
+        {
+          "email": "lisa.chen@example.com",
+          "countryCode": "US"
+        }
       ]
     },
     "datasetId": {
-      "title": "Dataset ID",
+      "title": "Dataset",
       "type": "string",
-      "description": "Check the output of another Actor run, for example a lead scraper. Nested fields such as location.country are found automatically.",
-      "editor": "textfield"
+      "description": "Check the output of another Actor run, for example a lead scraper. Nested fields such as location.country are found automatically. The Actor gets read access to this dataset only.",
+      "editor": "resourcePicker",
+      "resourceType": "dataset",
+      "resourcePermissions": [
+        "READ"
+      ]
     },
     "csvUrl": {
       "title": "CSV URL",
